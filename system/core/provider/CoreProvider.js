@@ -2,8 +2,8 @@
  * Created by gmena on 02-27-16.
  */
 
-import Interface from '../Interface'
-import Provider from '../Provider'
+import Interface from '../core/Interface'
+import Provider from '../core/Provider'
 
 //Handle dependencies using ECMAScript 6 Module import
 export default class CoreProvider extends Provider {

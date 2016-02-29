@@ -17,7 +17,7 @@ import {ReferenceErrorException} from './Exceptions';
 
 //Interface
 import Interface from './Interface';
-import iSyrupProvider from './interface/Interface_SyrupProvider';
+import iSyrupProvider from './../interface/Interface_SyrupProvider';
 
 export default class Core {
 	/** Syrup Core

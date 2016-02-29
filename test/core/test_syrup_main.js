@@ -6,7 +6,7 @@ import underscore from '../../system/core/adapter/Underscore_Adapter';
 import jQuery from '../../system/core/adapter/JQuery_Adapter';
 import momentJs from '../../system/core/adapter/Moment_Adapter';
 
-import Core from '../../system/core/Core';
+import Core from '../../system/core/core/Core';
 import CoreProvider from '../../system/core/provider/CoreProvider';
 
 describe('Syrup.core', function () {
