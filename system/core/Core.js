@@ -19,8 +19,8 @@ import {ReferenceErrorException} from './Exceptions';
 import Interface from './Interface';
 import iSyrupProvider from './interface/Interface_SyrupProvider';
 
-export default class Syrup {
-	/** Syrup Syrup class
+export default class Core {
+	/** Syrup Core
 	 *
 	 * @constructor
 	 * @param {Object} sProvider
@@ -30,13 +30,13 @@ export default class Syrup {
 		Interface.implement(sProvider, iSyrupProvider);
 
 		//Dependencies injection
-		this.is = sProvider.getIsJs(); // Is.js
-		this.m6s = sProvider.getM6s(); // Moment.js
-		this.u10s = sProvider.getU10s(); // Underscore.js
+		this.is = sProvider.getValidation(); // Is.js
+		this.m6s = sProvider.getDate(); // Moment.js
+		this.u10s = sProvider.getHelpers(); // Underscore.js
 
 		// Jquery.js
 		this.$ = ((q, c)=> {
-			return sProvider.getJQuery().$(q, c);
+			return sProvider.getDom().$(q, c);
 		});
 
 		//Navigator Info
